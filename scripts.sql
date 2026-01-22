@@ -11,7 +11,7 @@ from top_rated_mov_tmdb_1902_2026.top_rated_movies;
 select count(distinct id) from top_rated_mov_tmdb_1902_2026.top_rated_movies;
 
 -- check the column names
-select *
+select column_name 
 from information_schema.columns
 where table_schema = 'top_rated_mov_tmdb_1902_2026'
 and table_name = 'top_rated_movies';
